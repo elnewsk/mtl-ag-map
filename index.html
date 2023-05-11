@@ -48,13 +48,13 @@ var map = new mapboxgl.Map({
  bearing: 360.0,
  attributionControl: false
 });
-var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
     
 map.addControl(new mapboxgl.NavigationControl(), 'top-left');
 map.addControl(new mapboxgl.AttributionControl({
     customAttribution: '<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://github.com/mapbox/mapbox-gl-js" target="_blank">Mapbox GL JS</a> &middot; <a href="https://qgis.org" target="_blank">QGIS</a>',
     compact: false
 }));
+var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
 
 const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat([-73.57611,45.502791])
